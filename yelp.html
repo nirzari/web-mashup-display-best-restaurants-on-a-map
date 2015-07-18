@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Student Name:   -->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display Best Restaurants on a Map</title>
+    <meta charset="utf-8"/>
+	 <style type="text/css">
+      html, body, #map-canvas {
+		width: 600px;
+        height: 500px;
+        margin: 0px;
+        padding: 0px
+      }
+	 .labels { color: black; background-color: #FF8075; font-family: Arial; font-size: 11px; font-weight: bold; text-align: center; width: 12px; }
+	</style>
+	<script type="text/javascript" src="y2.js"></script>
+	
+  </head>
+  <body>
+      <form>
+       <label>Search Terms: <input type="text" id="search"/></label>
+       <input type="button" onclick="sendRequest();" value="Find"/>
+    </form>
+	
+	<div id="map-canvas" width="500px" height="500px"> 
+	</div>
+	<div><table id = "output" border = "1"></table></div>
+	
+  </body>
+</html>
